@@ -1,0 +1,240 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*   font-family: "Roboto", sans-serif; */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(4, 13, 21);
+    color: white;
+}
+
+
+.box1{
+    text-align: center;
+    margin: 0 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    display: block;
+}
+
+
+.box1 i{
+    font-size: 100px;
+    color: red;
+    animation: floushow 1.2s infinite;
+}
+
+
+@keyframes floushow {
+    0%{
+        color: red;
+    }
+    100%{
+        color: rgba(255, 0, 0, 0.486);
+    }
+}
+
+
+.box1 button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(45, 165, 63);
+    border: 2px solid transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.box1 button:active{
+    border: 2px solid rgb(45, 165, 63);
+    background-color: inherit;
+}
+
+
+/* Partie 2 */
+
+
+.box2{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    display: none;
+}
+
+
+.box2 .block{
+    display: block;
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+.box2 .block .p1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Para 1 */
+
+
+.p1 .d1{
+    position: relative;
+    display: none;
+}
+
+
+.p1 .d1 i{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: red;
+    font-weight: bold;
+    animation: showPara1 2s 1;
+}
+
+
+.p1 .d2{
+    position: relative;
+    display: none;
+}
+
+
+.p1 .d2 i{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: red;
+    font-weight: bold;
+    animation: showPara2 2s 1;
+}
+
+
+.p1 .d3{
+    position: relative;
+    display: none;
+}
+
+
+.p1 .d3 i{
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    color: red;
+    font-weight: bold;
+    animation: showPara3 2s 1;
+}
+
+
+.hache1{
+    display: none;
+    animation: hache1Animation 2s 1;
+}
+
+
+@keyframes showPara1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes showPara2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes showPara3 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes hache1Animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* Para 2 */
+
+
+.p2{
+    display: none;
+    text-align: justify;
+}
+
+
+.p3{
+    display: none;
+    text-align: justify;
+    animation: P3Animation 10s 1;
+}
+
+
+@keyframes P3Animation {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.p3 .link1{
+    color: rgb(40, 232, 69);
+}
+
+
+.p3 .link2{
+    color: red;
+}
